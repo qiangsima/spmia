@@ -18,6 +18,7 @@
   </parent>
   <modules>
     <module>simpleservice</module>
+    <module>licensing-service</module>
   </modules>
   <build>
     <plugins>
