@@ -1,5 +1,6 @@
 package com.sima.licensingservice.controllers;
 
+import com.sima.licensingservice.config.ServiceConfig;
 import com.sima.licensingservice.model.License;
 import com.sima.licensingservice.services.LicenseService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,13 +19,12 @@ public class LicenseServiceController {
     @Autowired
     private LicenseService licenseService;
 
+    @Autowired
+    private ServiceConfig serviceConfig;
+
     @RequestMapping(value = "/{licenseId}", method = RequestMethod.GET)
     public License getLicense(@PathVariable("organizationId") String organizationId,
                               @PathVariable("licenseId") String licenseId){
-        return new License()
-                .withId(licenseId)
-                .withOrganizationId(organizationId)
-                .withProductName("Teleco")
-                .withLicenseType("Seat");
+        return licenseService.getLicense(organizationId, licenseId);
     }
 }

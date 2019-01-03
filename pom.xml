@@ -2,13 +2,13 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.thoughtmechanix</groupId>
+  <groupId>com.sima</groupId>
   <version>0.0.1-SNAPSHOT</version>
-  <artifactId>tmx-parent-pom</artifactId>
+  <artifactId>spmia-parent-pom</artifactId>
   <packaging>pom</packaging>
 
 
-  <name>thoughtmechanix-parent-pom</name>
+  <name>spmia-parent-pom</name>
   <description>Parent Pom for the thoughtmechanix project</description>
 
   <parent>
@@ -17,8 +17,10 @@
     <version>2.1.1.RELEASE</version>
   </parent>
   <modules>
+    <module>confsvr</module>
     <module>simpleservice</module>
     <module>licensing-service</module>
+    <module>eurekasvr</module>
   </modules>
   <build>
     <plugins>
