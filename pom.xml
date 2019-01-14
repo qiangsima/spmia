@@ -22,7 +22,7 @@
     <module>licensing-service</module>
     <module>eurekasvr</module>
     <module>zuulsvr</module>
-      <module>authentication-service</module>
+    <module>authentication-service</module>
   </modules>
   <build>
     <plugins>
